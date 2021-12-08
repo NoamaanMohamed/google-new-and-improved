@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Results</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <meta http-equiv="refresh" content= url />
+    </head>
+    <body>
+        <div class="col">
+            <div class="row"><p id="0"></p></div>
+        </div>
+
+        <script>
+            fetch('http://localhost:3000/random')
+                .then(resp => resp.json())
+
+                .then((search) => {
+                    // let text = "<a href='" + search.webLink + "'>" + search.name + "</a>"
+                    window.location = search.webLink
+                    // document.getElementById(0).innerHTML = text
+                })
+        
+            
+        </script>
+    </body>
+</html>
