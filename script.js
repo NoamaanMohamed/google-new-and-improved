@@ -1,10 +1,10 @@
 const searchBtn = document.querySelector('#search-btn')
 
-searchBtn.addEventListener('click', e =>getRandomSearchName(e))
+// searchBtn.addEventListener('click', e =>getRandomSearchName(e))
 
 const luckyBtn = document.querySelector('#lucky-btn')
 
-luckyBtn.addEventListener('click', e =>getRandomSearchLink(e))
+// luckyBtn.addEventListener('click', e =>getRandomSearchLink(e))
 
 function getRandomSearchName(e) {
   e.preventDefault()
