@@ -4,7 +4,7 @@ const searchBtn = document.querySelector('#search-btn')
 
 const luckyBtn = document.querySelector('#lucky-btn')
 
-luckyBtn.addEventListener('click', e =>getRandomSearchLink(e))
+// luckyBtn.addEventListener('click', e =>getRandomSearchLink(e))
 
 function getRandomSearchName(e) {
   e.preventDefault()
