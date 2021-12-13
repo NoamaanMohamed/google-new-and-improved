@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors');
-const port = 3000;
+//const port = 3000;
 
 app.use(express.json());
 
@@ -46,7 +46,9 @@ app.get('/search/:index', (req, res) => {
 })
 
 //Get the server running
-app.listen(port, () => {
-  console.log(`Google search app listening at http://localhost:${port}`);
-})
+// app.listen(port, () => {
+//   console.log(`Google search app listening at http://localhost:${port}`);
+// })
 
+const port = process.env.PORT || 3000; // if there is no PORT env variable, 3000 will be used
+app.listen(port, () => console.log(`Express is running on port ${port}`))
